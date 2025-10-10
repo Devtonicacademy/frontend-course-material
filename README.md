@@ -88,7 +88,13 @@ This course is open-source under the MIT License — you can use, adapt, or dist
 
 ---
 
-## ✨ Let’s Begin!  
+## ✨ Cool Projects to work with!  
 
-➡️ [Start Session 1 → HTML Basics](./session-01-html/README.md)
+Solar Panel Showcase Website
+➡️ https://eyobor616.github.io/christechinstallation/
+
+Clothing Showcase website
+https://www.figma.com/design/c9k9SkId6k56eJIn8yxICy/Untitled?node-id=33-791&t=2Uu3i7WFR64FNxci-0
+
+
 
