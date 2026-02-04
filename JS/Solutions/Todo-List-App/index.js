@@ -52,6 +52,7 @@ function renderTodos() {
 // 6. Add new todo
 function addTodo(text) {
   if (text.trim() === "") {
+    console.log(text);
     alert("Please enter a task!");
     return;
   }
