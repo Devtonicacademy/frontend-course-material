@@ -75,8 +75,10 @@ h1 {
 .todo-item.completed {
   background: #e8f5e9;
   border-left-color: #2196f3;
-  text-decoration: line-through;
   color: #777;
+}
+.todo-item.completed span {
+  text-decoration: line-through;
 }
 
 .todo-text {
