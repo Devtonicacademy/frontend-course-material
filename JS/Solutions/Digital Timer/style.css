@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.year-cont,
+.month-cont,
+.day-cont,
+.date-cont,
+.hour-cont,
+.minute-cont,
+.second-cont {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+span {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
