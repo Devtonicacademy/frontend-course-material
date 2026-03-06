@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Combinators</title>
+    <style>
+      /* Descendant selector: styles ANY <p> inside a <div> */
+      div p {
+        color: blue;
+      }
+
+      /* Child selector: only <p> that are DIRECT children of <div> */
+      div > p {
+        font-weight: bold;
+      }
+
+      /* Adjacent sibling: selects the FIRST <p> immediately after a <div> */
+      div + p {
+        color: red;
+      }
+
+      /* General sibling: selects ALL <p> that come after a <div> */
+      div ~ p {
+        background: yellow;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Combinators Example</h2>
+    <p>Paragraph immediately after div (red + yellow)</p>
+
+    <div>
+      <p>Direct child paragraph inside div (blue + bold)</p>
+      <section>
+        <p>Nested paragraph inside a section within div (blue only)</p>
+      </section>
+      <p>Direct child paragraph inside div (blue + bold)</p>
+    </div>
+
+    <p>Paragraph immediately after div (red + yellow)</p>
+    <p>Another paragraph after div (yellow only)</p>
+    <p>Another paragraph after div (yellow only)</p>
+    <p>Another paragraph after div (yellow only)</p>
+    <p>Another paragraph after div (yellow only)</p>
+    <p>Another paragraph after div (yellow only)</p>
+    <p>Another paragraph after div (yellow only)</p>
+    <p>Another paragraph after div (yellow only)</p>
+    <p>Another paragraph after div (yellow only)</p>
+    <p>Another paragraph after div (yellow only)</p>
+
+    <footer>
+      <p>Another paragraph after div (yellow only)</p>
+    </footer>
+  </body>
+</html>

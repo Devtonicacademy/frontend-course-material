@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <style>
+      body {
+        /* background-color: rgba(255, 2, 2, 1); */
+        /* background-color: #ff0000; */
+        color: green;
+        /* opacity: 0.5; */
+        /* background: url("http://cdn.brooklynheightsblog.com/wp-content/uploads/soccer-ball-2-1.jpg"); */
+
+        background-image: url("http://cdn.brooklynheightsblog.com/wp-content/uploads/soccer-ball-2-1.jpg");
+        background-repeat: repeat-x;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      section {
+        background-color: aqua;
+        border-left: 5px solid rgb(89, 199, 199);
+        padding: 10px;
+        margin: 20px;
+      }
+
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid #ddd;
+      }
+
+      table {
+        width: 100%;
+        height: 200px;
+        background-color: white;
+      }
+
+      th {
+        background-color: green;
+        color: white;
+      }
+      tr:nth-child(odd) {
+        background: lightgray;
+      }
+
+      main {
+        border: 1px solid blue;
+      }
+      /* UNITS IN CSS */
+
+      div {
+        background-color: red;
+        width: 20%; /* RELATIVE TO ITS PARENT*/
+        height: 50px;
+        margin-top: 30px;
+        color: white;
+        font-weight: 900;
+        text-align: center; /*Align contents horizontally*/
+        align-content: center; /*Align contents vertically*/
+
+        /* padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px; */
+
+        /* Padding short hand */
+
+        padding: 20px 20px 0px 20px; /*Starts top, right, bottom, left*/
+        padding: 20px 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>CSS TUTORIAL</h2>
+
+    <header>
+      <h2>My Header</h2>
+    </header>
+    <main>
+      <section>
+        <h3>My Section 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos
+          rem vitae nesciunt recusandae obcaecati itaque aut porro, cum voluptas
+          deleniti nam ut neque error officia aliquam voluptatem inventore
+          omnis!
+        </p>
+      </section>
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+        <tr>
+          <td>Elvis</td>
+          <td>200</td>
+          <td>Miami</td>
+        </tr>
+        <tr>
+          <td>Elvis</td>
+          <td>200</td>
+          <td>Miami</td>
+        </tr>
+        <tr>
+          <td>Elvis</td>
+          <td>200</td>
+          <td>Miami</td>
+        </tr>
+        <tr>
+          <td>Elvis</td>
+          <td>200</td>
+          <td>Miami</td>
+        </tr>
+        <tr>
+          <td>Elvis</td>
+          <td>200</td>
+          <td>Miami</td>
+        </tr>
+        <tr>
+          <td>Elvis</td>
+          <td>200</td>
+          <td>Miami</td>
+        </tr>
+      </table>
+
+      <div>Lorem ipsum dolor sit.</div>
+    </main>
+  </body>
+</html>

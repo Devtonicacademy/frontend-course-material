@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors</title>
+    <style>
+      /******* CSS SELECTORS *******/
+
+      /* Universal Selector -  Affect all elements on the doc */
+      * {
+        /* color: red; */
+      }
+
+      /* Element Applies to all paragraphs */
+      p {
+        /* color: red; */
+      }
+
+      /* Class - used for a group of elements/items */
+
+      .highlight {
+        color: red;
+      }
+      .strongfont {
+        font-weight: bold;
+      }
+      #special {
+        color: green;
+      }
+
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello World</p>
+    <p class="highlight">This is highlighted</p>
+    <p class="highlight strongfont">This is highlighted 2</p>
+    <p id="special" class="strongfont">This is special</p>
+
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+  </body>
+</html>

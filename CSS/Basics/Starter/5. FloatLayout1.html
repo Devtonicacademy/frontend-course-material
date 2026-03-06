@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+      }
+      nav {
+        background-color: #f4f4f4;
+        padding: 10px;
+        width: 100%;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      .container {
+        width: 100%;
+        overflow: auto; /* Clearfix for floated children */
+      }
+      .main-content {
+        float: left;
+        width: 60%;
+        padding: 10px;
+      }
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+      }
+      aside {
+        float: right;
+        width: 40%;
+        background-color: #f4f4f4;
+        padding: 10px;
+      }
+      footer {
+        clear: both; /* Clear floats */
+      }
+
+      aside {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <main class="main-content">
+        <div class="column">
+          <h2>Main Content 1</h2>
+          <p>This is the first column of the main content area.</p>
+        </div>
+        <div class="column">
+          <h2>Main Content 2</h2>
+          <p>This is the second column of the main content area.</p>
+        </div>
+      </main>
+      <aside>
+        <h2>Sidebar</h2>
+        <p>This is the sidebar content.</p>
+      </aside>
+    </div>
+
+    <footer>
+      <p>Footer &copy; 2025</p>
+    </footer>
+  </body>
+</html>

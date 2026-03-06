@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Styled Homepage</title>
+    <style>
+      :root {
+        --bg: #0f172a; /* slate-900 */
+        --text: #e2e8f0; /* slate-200 */
+        --accent: #22d3ee; /* cyan-400 */
+        --accent-contrast: #0c4a6e;
+        --font-stack: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+          Cantarell, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        font-family: var(--font-stack);
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        padding: 0 1rem;
+      }
+
+      .site-header {
+        text-align: center;
+        padding: 2rem 0 1rem;
+      }
+
+      .content {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--accent-contrast);
+        text-decoration: none;
+        padding: 0.6rem 1rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+      }
+      .btn:hover {
+        filter: brightness(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>My Styled Page</h1>
+    </header>
+
+    <main class="content">
+      <p>Welcome! This page uses a custom color palette and typography.</p>
+      <a class="btn" href="#">Primary Action</a>
+    </main>
+  </body>
+</html>

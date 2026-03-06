@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        display: none;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        background: steelblue;
+        color: white;
+        box-shadow: 3px 3px #ddd;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      ul:hover {
+        display: block;
+      }
+
+      /* Hover effect */
+      button:hover {
+        background-color: coral;
+      }
+      /* Focus/ Active effect */
+      button:focus {
+        background-color: green;
+      }
+
+      li:nth-child(even) {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Pseudo-classes</h2>
+
+    <button>Hover me</button>
+    <br /><br />
+    <input type="text" placeholder="Click me to focus" />
+
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2 (even)</li>
+      <li>Item 3</li>
+      <li>Item 4 (even)</li>
+    </ul>
+
+    <p>First paragraph</p>
+    <p>Second paragraph (styled by :not)</p>
+  </body>
+</html>
