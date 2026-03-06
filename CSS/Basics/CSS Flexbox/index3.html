@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background: black;
+        color: white;
+        padding: 10px 0;
+        height: 4rem;
+      }
+
+      .myHeader {
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+      }
+
+      .nav-container ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-container ul li {
+        cursor: pointer;
+      }
+
+      section {
+        height: 700px;
+        background-color: rgb(107, 42, 128);
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+      #hero {
+        /* max-width: 1200px; */
+        border: 1px solid red;
+        text-align: center;
+        padding: 4rem 2rem;
+        margin: 2rem auto;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        margin: 0 5px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .btn-primary {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="myHeader">
+        <h3>Devtonic</h3>
+
+        <div class="nav-container">
+          <ul>
+            <li>Courses</li>
+            <li>Why Us</li>
+            <li>Prices</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div id="hero">
+        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, fuga!
+        </h3>
+        <div class="herobtn-container">
+          <button class="btn btn-primary">Get Started</button>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

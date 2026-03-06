@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        background-color: hsl(0, 0%, 95%);
+        height: 300px;
+        padding: 10px;
+      }
+
+      .flex-item-left {
+        background-color: DodgerBlue;
+        color: white;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        height: 100px;
+        flex: 50%;
+      }
+
+      .flex-item-right {
+        background-color: Tomato;
+        color: white;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        height: 100px;
+        flex: 50%;
+      }
+
+      /* Responsive layout - makes a one column-layout instead of a two-column layout */
+      @media (max-width: 1200px) {
+        .flex-container {
+          flex-direction: row;
+        }
+        .flex-item-right,
+        .flex-item-left {
+          flex: 100%;
+        }
+        .flex-item-right {
+          background-color: greenyellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FLEX BOX TUTORIAL</h1>
+
+    <div class="flex-container">
+      <div class="flex-item-left">1</div>
+      <div class="flex-item-right">2</div>
+    </div>
+  </body>
+</html>

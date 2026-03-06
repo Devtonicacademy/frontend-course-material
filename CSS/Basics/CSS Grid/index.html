@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color: rgb(33, 150, 243);
+        --secondary-color: rgb(211, 234, 253);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #container {
+        width: 80%;
+        margin: auto;
+        padding: 5px;
+        background-color: var(--primary-color);
+      }
+      header {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        text-align: center;
+      }
+
+      #section {
+        display: flex;
+        gap: 10px;
+        margin: 20px 0;
+      }
+      nav {
+        flex: 1;
+        background-color: var(--secondary-color);
+        padding: 10px;
+      }
+      article {
+        flex: 3;
+        background-color: var(--secondary-color);
+        padding: 10px;
+      }
+      footer {
+        background-color: var(--secondary-color);
+        text-align: center;
+        padding: 10px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      ul > li {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1>My Header</h1>
+      </header>
+      <div id="section">
+        <nav>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </nav>
+
+        <article>
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            voluptatum adipisci odit reprehenderit repellendus sed quibusdam
+            dolore natus vel quae atque distinctio labore aperiam? Ipsam nam
+            nulla deserunt placeat? Neque?
+          </p>
+        </article>
+      </div>
+      <footer class="myfooter">
+        <p>My Footer</p>
+      </footer>
+    </div>
+  </body>
+</html>

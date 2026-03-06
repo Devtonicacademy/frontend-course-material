@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Font Awesome Icons Demo</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f6fa;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 16px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.15s ease;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      .icon {
+        font-size: 2rem;
+        color: #4a69bd;
+        margin-bottom: 10px;
+      }
+      .name {
+        font-size: 0.9rem;
+        color: #555;
+      }
+      .prefix {
+        display: block;
+        font-size: 0.75rem;
+        color: #888;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Popular Font Awesome Icons</h1>
+
+    <div class="grid">
+      <!-- Solid -->
+      <div class="card">
+        <i class="fa-solid fa-house icon"></i>
+        <div class="name">House</div>
+        <span class="prefix">fa-solid</span>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-user icon"></i>
+        <div class="name">User</div>
+        <span class="prefix">fa-solid</span>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-bell icon"></i>
+        <div class="name">Bell</div>
+        <span class="prefix">fa-solid</span>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-heart icon"></i>
+        <div class="name">Heart</div>
+        <span class="prefix">fa-solid</span>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-gear icon"></i>
+        <div class="name">Gear</div>
+        <span class="prefix">fa-solid</span>
+      </div>
+
+      <!-- Regular -->
+      <div class="card">
+        <i class="fa-regular fa-star icon"></i>
+        <div class="name">Star</div>
+        <span class="prefix">fa-regular</span>
+      </div>
+      <div class="card">
+        <i class="fa-regular fa-comment icon"></i>
+        <div class="name">Comment</div>
+        <span class="prefix">fa-regular</span>
+      </div>
+      <div class="card">
+        <i class="fa-regular fa-circle-check icon"></i>
+        <div class="name">Circle Check</div>
+        <span class="prefix">fa-regular</span>
+      </div>
+
+      <!-- Brands -->
+      <div class="card">
+        <i class="fa-brands fa-github icon"></i>
+        <div class="name">GitHub</div>
+        <span class="prefix">fa-brands</span>
+      </div>
+      <div class="card">
+        <i class="fa-brands fa-twitter icon"></i>
+        <div class="name">Twitter</div>
+        <span class="prefix">fa-brands</span>
+      </div>
+      <div class="card">
+        <i class="fa-brands fa-facebook icon"></i>
+        <div class="name">Facebook</div>
+        <span class="prefix">fa-brands</span>
+      </div>
+      <div class="card">
+        <i class="fa-brands fa-linkedin icon"></i>
+        <div class="name">LinkedIn</div>
+        <span class="prefix">fa-brands</span>
+      </div>
+    </div>
+  </body>
+</html>

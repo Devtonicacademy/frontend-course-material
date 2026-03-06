@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      :root {
+        --my-height: 200px;
+        --my-width: 200px;
+        --border-radius: 50%;
+      }
+      #grad1 {
+        height: var(--my-height);
+        width: var(--my-width);
+        border-radius: var(--border-radius);
+
+        background-image: conic-gradient(red, yellow, green);
+      }
+
+      #grad2 {
+        height: var(--my-height);
+        width: var(--my-width);
+        border-radius: var(--border-radius);
+
+        background: conic-gradient(
+          red 0deg,
+          red 90deg,
+          yellow 90deg,
+          yellow 180deg,
+          green 180deg,
+          green 270deg,
+          blue 270deg
+        );
+      }
+
+      #grad3 {
+        height: var(--my-height);
+        width: var(--my-width);
+        border-radius: var(--border-radius);
+
+        background-image: repeating-conic-gradient(
+          red 10%,
+          yellow 20%,
+          blue 30%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conic Gradient - Three Colors</h1>
+
+    <div id="grad1"></div>
+
+    <h3>MULTI COLOR WITHOUT GRADIENT</h3>
+
+    <div id="grad2"></div>
+
+    <h3>Repeating a Conic Gradient</h3>
+
+    <div id="grad3"></div>
+  </body>
+</html>

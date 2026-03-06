@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        background-color: #f9a825;
+      }
+
+      .calculator {
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+      }
+
+      .display {
+        font-size: 48px;
+        text-align: right;
+        margin-bottom: 5px;
+      }
+
+      .sub-display {
+        font-size: 18px;
+        text-align: right;
+        color: #888;
+        margin-bottom: 20px;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 24px;
+        border: none;
+        border-radius: 10px;
+        background-color: #e0e0e0;
+        cursor: pointer;
+        box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.7),
+          inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .darkOrange {
+        background-color: #ff9500;
+        color: white;
+      }
+
+      button:hover {
+        background-color: #d0d0d0;
+      }
+
+      .equal_btn {
+        grid-column: span 2;
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">5768</div>
+      <div class="sub-display">5000 + 300 + 468</div>
+
+      <div class="buttons">
+        <button>AC</button>
+        <button>&#x232B;</button>
+        <button>%</button>
+        <button class="darkOrange">+</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="darkOrange">-</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="darkOrange">×</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="darkOrange">÷</button>
+
+        <button>0</button>
+        <button>.</button>
+        <button class="darkOrange equal_btn">=</button>
+      </div>
+    </div>
+  </body>
+</html>
