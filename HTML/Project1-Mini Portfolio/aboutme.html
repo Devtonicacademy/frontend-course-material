@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hello! My name is Alex.<br />
+        I’m learning HTML and CSS, and I enjoy building clean layouts.<br />
+        In my free time, I like reading, coding, and hiking.
+      </p>
+
+      <hr />
+
+      <h3>Contact Me</h3>
+      <p>If you’d like to reach out, fill in the form below:</p>
+
+      <form>
+        <div>
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="msg">Message</label><br />
+          <textarea id="msg" name="msg" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <footer class="footer">
+        <small
+          >Need a custom plan?
+          <a class="btn" href="services.html">Contact us</a></small
+        >
+      </footer>
+    </div>
+  </body>
+</html>
