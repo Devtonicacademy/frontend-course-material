@@ -1,6 +1,6 @@
 # MovieVault App - Build Instructions
 
-![Movie Valut](https://example.com/images/landscape.jpg)
+![Movie Valut]([https://example.com/images/landscape.jpg](https://github.com/Devtonicacademy/frontend-course-material/blob/main/JS/Solutions/MovieVault/Screenshot%202026-04-15%20080514.png))
 
 ## Overview
 
