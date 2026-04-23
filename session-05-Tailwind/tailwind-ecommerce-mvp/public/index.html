@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to the compiled CSS -->
+  <link rel="stylesheet" href="output.css">
+  <!-- Google Fonts for the custom theme -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  <title>VibeStore MVP | Local Tailwind Power</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto w-full">
+    <div class="text-2xl font-black text-brand tracking-tighter">VIBESTORE.</div>
+    <div class="flex items-center gap-6">
+      <button onclick="document.documentElement.classList.toggle('dark')" class="p-3 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+        🌙
+      </button>
+      <div class="w-10 h-10 bg-brand/10 text-brand rounded-full flex items-center justify-center font-bold">🛒</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row items-center gap-12">
+    <div class="flex-1 text-center md:text-left">
+      <div class="badge bg-brand/10 text-brand mb-6 inline-block">New Season 2026</div>
+      <h1 class="text-6xl md:text-8xl mb-8 leading-[0.9]">Style that speaks <span class="text-brand">volumes.</span></h1>
+      <p class="text-xl text-slate-500 max-w-lg mb-10 leading-relaxed">Experience the future of fashion. Curated by creators, powered by passion, styled with Tailwind CSS.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <button class="btn-primary">Shop Collection</button>
+        <button class="btn-outline">Watch Trends</button>
+      </div>
+    </div>
+    <div class="flex-1 relative animate-float">
+      <div class="absolute -inset-4 bg-brand/20 blur-3xl rounded-full"></div>
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f" class="relative rounded-[40px] shadow-2xl object-cover aspect-[4/5] w-full max-w-md mx-auto" alt="Hero Model">
+    </div>
+  </header>
+
+  <!-- Product Grid -->
+  <section class="max-w-7xl mx-auto px-8 py-20">
+    <div class="flex justify-between items-end mb-12">
+      <div>
+        <h2 class="text-4xl">Featured Drops</h2>
+        <p class="text-slate-500 mt-2">Handpicked for your vibe.</p>
+      </div>
+      <a href="#" class="text-brand font-bold hover:underline">View All</a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Product 1 -->
+      <div class="product-card group">
+        <div class="relative overflow-hidden aspect-square">
+          <img src="https://images.unsplash.com/photo-1539106602342-fd151b1a4f00" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Product">
+          <div class="absolute top-4 left-4 badge bg-white/90 text-slate-900 border-none backdrop-blur-sm">Sold Out</div>
+        </div>
+        <div class="p-8 pb-10">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-2xl font-bold">Midnight Hoodie</h3>
+            <span class="text-xl font-medium text-slate-400">$89</span>
+          </div>
+          <p class="text-slate-500 text-sm italic mb-6">Sustainable cotton, oversized fit, maximum comfort.</p>
+          <button class="w-full py-4 bg-slate-900 text-white dark:bg-brand dark:text-white rounded-2xl font-bold hover:opacity-90 transition-opacity">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card group">
+        <div class="relative overflow-hidden aspect-square">
+          <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Product">
+          <div class="absolute top-4 left-4 badge bg-brand text-white border-none">Bestseller</div>
+        </div>
+        <div class="p-8 pb-10">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-2xl font-bold">Azure Sneakers</h3>
+            <span class="text-xl font-medium text-slate-400">$120</span>
+          </div>
+          <p class="text-slate-500 text-sm italic mb-6">High-performance tread, breathable mesh, sleek design.</p>
+          <button class="w-full py-4 bg-slate-900 text-white dark:bg-brand dark:text-white rounded-2xl font-bold hover:opacity-90 transition-opacity">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card group">
+        <div class="relative overflow-hidden aspect-square">
+          <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Product">
+        </div>
+        <div class="p-8 pb-10">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-2xl font-bold">Coral Shades</h3>
+            <span class="text-xl font-medium text-slate-400">$45</span>
+          </div>
+          <p class="text-slate-500 text-sm italic mb-6">Polarized lenses, titanium frames, UV protection.</p>
+          <button class="w-full py-4 bg-slate-900 text-white dark:bg-brand dark:text-white rounded-2xl font-bold hover:opacity-90 transition-opacity">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-7xl mx-auto px-8 py-12 border-t border-slate-200 dark:border-slate-800 text-center">
+    <p class="text-slate-400 text-sm font-medium">© 2026 VibeStore. Built locally with Tailwind CSS CLI.</p>
+  </footer>
+
+</body>
+</html>
